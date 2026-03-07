@@ -36,7 +36,7 @@ window.addEventListener("resize", () => {
 const canvas = document.querySelector("canvas.webgl");
 
 const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath("/draco/");
+dracoLoader.setDecoderPath("draco/");
 const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 const textureLoader = new THREE.TextureLoader();
