@@ -5,10 +5,10 @@ import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import Stats from "stats.js";
 import GUI from "lil-gui";
-import portalVertexShader from "shaders/portal/vertex.glsl";
-import portalFragmentShader from "shaders/portal/fragment.glsl";
-import firefliesVertexShader from "shaders/fireflies/vertex.glsl";
-import firefliesFragmentShader from "shaders/fireflies/fragment.glsl";
+import portalVertexShader from "./shaders/portal/vertex.glsl";
+import portalFragmentShader from "./shaders/portal/fragment.glsl";
+import firefliesVertexShader from "./shaders/fireflies/vertex.glsl";
+import firefliesFragmentShader from "./shaders/fireflies/fragment.glsl";
 
 const stats = new Stats();
 stats.showPanel(0);
@@ -36,7 +36,7 @@ window.addEventListener("resize", () => {
 const canvas = document.querySelector("canvas.webgl");
 
 const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath("draco/");
+dracoLoader.setDecoderPath("/draco/");
 const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 const textureLoader = new THREE.TextureLoader();
