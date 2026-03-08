@@ -151,7 +151,7 @@ scene.add(camera);
 const controls = new OrbitControls(camera, canvas);
 controls.target.set(0, 0.4, 0);
 controls.enableDamping = true;
-controls.maxDistance = 6;
+controls.maxDistance = 10;
 controls.maxPolarAngle = Math.PI / 2.5;
 controls.minAzimuthAngle = -Math.PI / 1.75;
 controls.maxAzimuthAngle = Math.PI / 1.75;
